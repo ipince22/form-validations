@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Payment Form</title>
+</head>
+
+<body>
+
+    <div class="container border rounded px-5 py-3 mt-2">
+        <div class="row bg-secondary text-light rounded my-1 p-1">
+            <h1>Payments</h1>
+        </div>
+        <div class="row">
+            <div id="error" class="alert alert-danger container-fluid justify-content-center align-items-center"
+                style="display: none;">
+            </div>
+        </div>
+        <div class="row mx-auto">
+            <div class="row">
+                <form id="form1" class="needs-validation" method="GET" action="/">
+                    <div class="form-row my-4">
+                        <div class="col-6 form-group">
+                            <label for="credit-card">Card #</label>
+                            <input id="credit-card" type="text" class="form-control" placeholder="xxxx xxxx xxxx xxxx"
+                                name="credit-card" maxlength="40">
+                        </div>
+                        <div class="col form-group">
+                            <label for="cc-date">Date</label>
+                            <input id="cc-date" type="text" class="form-control" placeholder="dd/mm" name="cc-date"
+                                maxlength="5">
+                        </div>
+                        <div class="col form-group">
+                            <label for="amount">Amount</label>
+                            <input id="amount" type="text" class="form-control" placeholder="$" maxlength="20">
+                        </div>
+                    </div>
+                    <div class="form-row my-4">
+                        <div class="col form-group">
+                            <input id="first-name" type="text" class="form-control" placeholder="First name"
+                                maxlength="20">
+                        </div>
+                        <div class="col form-group">
+                            <input id="last-name" type="text" class="form-control" placeholder="Last name"
+                                maxlength="20">
+                        </div>
+                    </div>
+                    <div class="form-row my-4">
+                        <div class="form-group col-md-6">
+                            <label for="city">City</label>
+                            <input id="city" type="text" class="form-control" maxlength="20">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="state">State</label>
+                            <select id="state" class="form-control">
+                                <option selected>Choose...</option>
+                                <option value="california">California</option>
+                                <option value="florida">Florida</option>
+                                <option value="washington">Washington</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="postal-code">Postal Code</label>
+                            <input id="postal-code" type="text" class="form-control" maxlength="15">
+                        </div>
+                    </div>
+                    <div class="form-row my-4 justify-content-between">
+                        <div id="card-types-container" class="col-4 bg-secondary rounded text-light">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="visa" value="visa" name="card-types"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="visa"><i class="fab fa-cc-visa"></i></label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="master-card" value="master-card" name="card-types"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="master-card"><i
+                                        class="fab fa-cc-mastercard"></i></label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="amex" value="amex" name="card-types"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="amex"><i class="fab fa-cc-amex"></i></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <textarea class="form-control" aria-label="With textarea" maxlength="140"></textarea>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row justify-content-end mx-auto">
+            <button type="reset" form="form1" value="cancel" class="btn btn-secondary mx-4">Cancel</button>
+            <button type="submit" form="form1" id="submit" value="submit" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+    </div>
+    </form>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
